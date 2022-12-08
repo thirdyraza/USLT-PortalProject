@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --blu: #294A70;
+    --yel: #FFAB1F;
+    --whi: #FFFFFF;
+    --gry: #292A2C;
+    --blk: #212121;
+}
+
+.grouped{
+    display: grid;
+    padding-top: 100px;
+}
+.side2-nav{
+    width: 55px;
+    box-shadow: black 1px 1px 10px;
+    border-radius: 40px;
+    padding: 20px 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    position: fixed;
+    top: 180px;
+    margin: 10px;
+    z-index: 2; 
+}
+
+.side3-nav{
+    width: 55px;
+    box-shadow: black 1px 1px 10px;
+    border-radius: 40px;
+    padding: 20px 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 250px;
+    margin: 10px;
+    
+}
+
+.side4-nav{
+    width: 55px;
+    box-shadow: black 1px 1px 10px;
+    border-radius: 40px;
+    padding: 20px 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 210px;
+    margin: 10px;
+    
+}
+
+.side-nav{
+    width: 55px;
+    box-shadow: black 1px 1px 10px;
+    border-radius: 40px;
+    padding: 20px 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 200px;
+    margin: 10px;
+    
+}
+
+.side-btn img{
+   width: 25px;
+   padding: 15px 18px;
+   transition: .5s;
+}
+
+.side-btn{
+    border-radius: 120px;
+    transition: .5s;
+    margin: 10px;
+}
+
+.side-btn:hover{
+    background-color: var(--blu);
+}
+
+.side-btn img:hover{
+    filter: invert(100%);
+}
+
+
+/* grades table start--------------------------------*/
+    
+.bg{
+    margin: 70px;
+}
+.gradesparent{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #536e8c;
+    padding: 30px;
+}
+
+.grades{
+    width: 100%;
+    text-align: center;
+}
+.grades tr:nth-child(even){
+    background-color: #e5e5e5;
+}
+.grades table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.grades th, .grades td{
+    color: var(--gry);
+    padding: 9px 13px;
+}
+.grades h3{
+    cursor: pointer;
+    font: bold 20px helvetica;
+    color: var(--whi);
+    padding: 2em 0 1em 0;
+    background-color: var(--blu);
+    letter-spacing: 5px;
+}
+.grades h3:hover{
+    text-shadow: 2px 2px 2px var(--blk);
+    cursor: auto;
+}
+.grades h4{
+    font: bold 18px arial;
+    background-color: #ffbb4b;
+    color: var(--blu);
+    padding: 7px;
+    letter-spacing: 10px;
+}
+
+.firsem .titles1 th, .shosem .titles3 th, .secsem .titles2 th{
+    padding: 15px;
+    font: bold 17px arial;
+    background-color: #e5e5e5;
+    color: var(--gry);
+}
+table.shosem{
+    margin-bottom: 7em;
+}
+#year1, #year2, #year3, #year4{
+    background-color: #cccccc;
+}
+
+.code{
+    letter-spacing: 0;
+    font: normal 14px arial;
+    width: 10%;
+}
+.description{
+    text-align: left;
+    font: bold 14px arial;
+    font-style: italic;
+    width: 40%;
+}
+.grade{
+    font: bold 14px helvetica;
+    width: 10%;
+}
+.units{
+    font: italic 14px helvetica;
+    text-align: right;
+    width: 5%;
+}
+.gwa th{
+    text-align: right;
+    padding-right: 10px;
+}
+th.ave{
+    font: bold 15px arial;
+    color: red;
+    font-style: italic;
+}
+.uni{
+    font: bold 12px arial;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .gradesparent{
+        width: 100%;
+        margin: 0;
+    }
+    .bg{
+        margin: 0;
+        padding: 3vw;
+    }
+}
+
+/* grades table end */
